@@ -1,0 +1,44 @@
+//
+// ASSIST.LOC - localization file for SMS Assistant application
+// Copyright (c) 2001-2003 Tuomas Eerola
+//  
+
+// German
+
+
+#define ASSIST_CAPTION_STRING									"SMS Assistent"
+#define ASSIST_CAPTION_STRING_SHORT								"SMS A."
+
+#define ASSIST_NAVI_LABEL_ACTIVE								"Aktiv"
+#define ASSIST_NAVI_LABEL_INACTIVE								"Inaktiv"
+#define ASSIST_IDLE_MENU_ITEM_ACTIVATE							"Aktivieren"
+#define ASSIST_IDLE_MENU_ITEM_DEACTIVATE						"Deaktivieren"
+#define ASSIST_IDLE_MENU_ITEM_SETTINGS							"Einstellungen"
+#define ASSIST_IDLE_MENU_ITEM_ABOUT								"Über..."
+#define ASSIST_IDLE_MENU_ITEM_EXIT								"Schließen"
+#define ASSIST_ABOUT_MENU_ITEM_BACK								"Zurück"
+#define ASSIST_SETTING_MENU_ITEM_CHANGE							"Ändern"
+#define ASSIST_SETTING_MENU_ITEM_BACK							"OK"
+#define ASSIST_SETTING_LIST_TITLE								"Einstellungen"
+#define ASSIST_SETTING_LIST_ITEM_MESSAGE						"Meldung"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO						"Antwort an"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER						"Kopfzeile"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION					"Auto. Ausschalten"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_ALL			"Alle"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_VOICE_CALLS	"Telefonanrufe"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_SMS			"Kurzmitteilungen"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_MMS			"MMS-Mitteilungen"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_YES		"Ein"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_NO		"Aus"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_ON		"Ein"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_OFF		"Aus"
+#define ASSIST_QUERY_PROMPT_DEACTIVATION_TIME					"Auto. Ausschaltung"
+#define ASSIST_ABOUT_APPLICATION_MESSAGE						"Tuomas Eerola\nwww.iki.fi/eerola\n2001-2005\n\nv2.99"
+#define ASSIST_HEADER_TEXT										"Automatische Antwort: "
+#define ASSIST_STARTUP_NOTE_MESSAGE								"Autorisiere bitte SMS Assistent zum senden von Mitteilungen ohne weitere Bestätigung."
+#define ASSIST_STARTUP_INTERRUPTED_NOTE_MESSAGE					"SMS Assistent wird geschlossen."
+#define ASSIST_NO_MESSAGE_NOTE_MESSAGE							"SMS Assistent ohne Meldung verwenden?"
+#define ASSIST_LONG_MESSAGE_NOTE_MESSAGE						"Meldung wird in 2 Mitteilungen gesendet."
+#define ASSIST_EXIT_NOTE_MESSAGE								"SMS Assistent wird deaktiviert. Fortfahren?"
+#define ASSIST_DEACTIVATION_WARNING_NOTE_MESSAGE				"SMS Assistent wird deaktiviert. Fortfahren?"
+#define ASSIST_NO_SMSC_NUMBER_NOTE_MESSAGE						"Keine SMS-Centernummer definiert!"

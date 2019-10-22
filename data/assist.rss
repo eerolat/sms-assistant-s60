@@ -1,0 +1,448 @@
+//
+// ASSIST.RSS - resource file for SMS Assistant application
+// Copyright (c) 2001-2005 Tuomas Eerola
+//  
+
+
+NAME    SMSA // 4 letter ID
+
+#include <eikon.rh>
+#include "assist.hrh"
+#include "assist.loc"
+#include "assist.mbg"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+
+
+RESOURCE RSS_SIGNATURE { }
+
+
+RESOURCE TBUF {buf="";}
+
+
+RESOURCE EIK_APP_INFO
+    {
+    hotkeys=r_assist_hotkeys;
+    status_pane=r_assist_status_pane;
+    }
+
+
+RESOURCE HOTKEYS r_assist_hotkeys
+    {
+    control=
+        {
+        HOTKEY {command=EAknCmdExit; key='e';}
+        };
+    }
+
+
+RESOURCE MENU_BAR r_assist_menubar
+	{
+	titles=
+		{
+		MENU_TITLE
+			{
+			menu_pane=r_assist_options_menu;
+			}
+		};
+	}
+
+
+RESOURCE MENU_BAR r_assist_setting_menubar
+	{
+	titles=
+		{
+		MENU_TITLE
+			{
+			menu_pane=r_assist_setting_options_menu;
+			}
+		};
+	}
+
+
+RESOURCE MENU_BAR r_assist_about_menubar
+	{
+	titles=
+		{
+		MENU_TITLE
+			{
+			menu_pane=r_assist_about_options_menu;
+			}
+		};
+	}
+
+
+RESOURCE AVKON_VIEW r_assist_idle_view
+	{
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar=r_assist_menubar;
+	}
+
+
+RESOURCE AVKON_VIEW r_assist_setting_view
+    {
+    cba=R_AVKON_SOFTKEYS_OPTIONS_DONE;
+	menubar=r_assist_setting_menubar;
+    }
+
+
+RESOURCE AVKON_VIEW r_assist_about_view
+    {
+    cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar=r_assist_about_menubar;
+    }
+
+
+RESOURCE STATUS_PANE_APP_MODEL r_assist_status_pane
+	{
+	panes=
+		{
+		SPANE_PANE
+			{
+			id=EEikStatusPaneUidNavi;
+			type=EAknCtNaviPane;
+			resource=r_assist_navi_label_inactive;
+			}
+		};
+	}
+
+
+RESOURCE NAVI_LABEL r_assist_navi_label_inactive
+	{
+	txt=ASSIST_NAVI_LABEL_INACTIVE;
+	}
+
+
+RESOURCE NAVI_LABEL r_assist_navi_label_active
+	{
+	txt=ASSIST_NAVI_LABEL_ACTIVE;
+	}
+
+
+RESOURCE MENU_PANE r_assist_options_menu
+	{
+	items=
+		{
+		MENU_ITEM
+			{
+			command=EAssistCmdActivate;
+			txt=ASSIST_IDLE_MENU_ITEM_ACTIVATE;
+			},
+		MENU_ITEM
+			{
+			command=EAssistCmdDeactivate;
+			txt=ASSIST_IDLE_MENU_ITEM_DEACTIVATE;
+			},
+		MENU_ITEM
+			{
+			command=EAssistCmdConfigure;
+			txt=ASSIST_IDLE_MENU_ITEM_SETTINGS;
+			},
+		MENU_ITEM
+			{
+			command=EAssistCmdAbout;
+			txt=ASSIST_IDLE_MENU_ITEM_ABOUT;
+			},
+		MENU_ITEM
+			{
+			command=EAssistCmdExit;
+			txt=ASSIST_IDLE_MENU_ITEM_EXIT;
+			}
+		};
+	}
+
+
+RESOURCE MENU_PANE r_assist_setting_options_menu
+	{
+	items=
+		{
+		MENU_ITEM
+			{
+			command=EAssistCmdChange;
+			txt=ASSIST_SETTING_MENU_ITEM_CHANGE;
+			},
+		MENU_ITEM
+			{
+			command=EAknSoftkeyDone;
+			txt=ASSIST_SETTING_MENU_ITEM_BACK;
+			}
+		};
+	}
+
+
+RESOURCE MENU_PANE r_assist_about_options_menu
+	{
+	items=
+		{
+		MENU_ITEM
+			{
+			command=EAknSoftkeyBack;
+			txt=ASSIST_ABOUT_MENU_ITEM_BACK;
+			}
+		};
+	}
+
+
+RESOURCE DIALOG r_confirmation_query
+	{
+	flags=EGeneralQueryFlags;
+	buttons=R_AVKON_SOFTKEYS_YES_NO;
+	items=
+		{
+		DLG_LINE
+			{
+			type=EAknCtQuery;
+			id=EGeneralQuery;
+			control=AVKON_CONFIRMATION_QUERY
+				{
+				layout=EConfirmationQueryLayout;
+				};
+			}
+		};
+	}
+
+
+RESOURCE DIALOG r_ok_query
+	{
+	flags=EGeneralQueryFlags;
+	buttons=R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE
+			{
+			type=EAknCtNote;
+			id=EGeneralQuery;
+			control=AVKON_NOTE 
+				{
+				layout=EGeneralLayout;
+				singular_label=ASSIST_STARTUP_INTERRUPTED_NOTE_MESSAGE;
+				};
+			}
+		};
+	}
+
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_settings_item_list
+	{
+	title=ASSIST_SETTING_LIST_TITLE;
+	initial_number=1;
+	items=
+		{
+		AVKON_SETTING_ITEM
+			{
+			identifier=EReplyMessageSetting;
+			setting_page_resource=r_reply_message_setting_page;
+			name=ASSIST_SETTING_LIST_ITEM_MESSAGE;
+			},
+		AVKON_SETTING_ITEM
+            {
+            identifier=EReplyToSetting;
+            setting_page_resource=r_reply_to_setting_page;
+            associated_resource=r_reply_to_setting_page_texts;
+            name=ASSIST_SETTING_LIST_ITEM_REPLY_TO;
+            },
+		AVKON_SETTING_ITEM
+            {
+            identifier=EAutomaticDeactivationSetting;
+            setting_page_resource=r_automatic_deactivation_setting_page;
+            associated_resource=r_automatic_deactivation_setting_page_texts;
+            name=ASSIST_SETTING_LIST_ITEM_DEACTIVATION;
+            },
+		AVKON_SETTING_ITEM
+            {
+            identifier=EReplyHeaderUseSetting;
+            setting_page_resource=r_header_use_setting_page;
+            associated_resource=r_header_use_setting_page_texts;
+            name=ASSIST_SETTING_LIST_ITEM_USE_HEADER;
+            }
+		};
+	}
+
+
+RESOURCE EDWIN r_reply_message_editor
+    {
+    width=9;
+    lines=5;
+    maxlength=160;
+    }
+
+
+RESOURCE AVKON_SETTING_PAGE r_reply_message_setting_page
+	{
+	label=ASSIST_SETTING_LIST_ITEM_MESSAGE;
+	softkey_resource=R_AVKON_SOFTKEYS_TEXT_SETTING_ITEM;
+	type=EEikCtEdwin;
+	editor_resource_id=r_reply_message_editor;
+	}
+
+
+RESOURCE AVKON_SETTING_PAGE r_reply_to_setting_page
+    {   
+    label=ASSIST_SETTING_LIST_ITEM_REPLY_TO;
+    type=EAknCtPopupSettingList;
+    editor_resource_id=r_reply_to_states_list_editor;
+    }
+
+
+RESOURCE POPUP_SETTING_LIST r_reply_to_states_list_editor
+	{
+	}
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_reply_to_setting_page_texts
+    {
+    setting_texts_resource=r_reply_to_states_list;
+    }
+
+
+RESOURCE ARRAY r_reply_to_states_list
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT {value=EAll; text=ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_ALL;},
+		AVKON_ENUMERATED_TEXT {value=EVoice; text=ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_VOICE_CALLS;},
+        AVKON_ENUMERATED_TEXT {value=ESMS; text=ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_SMS;},
+		AVKON_ENUMERATED_TEXT {value=EMMS; text=ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_MMS;}
+        };
+    }
+
+
+RESOURCE POPUP_SETTING_LIST r_reply_to_list
+    {
+    new_item_setting_editor_resource=r_header_use_states_list;
+    }
+
+
+RESOURCE AVKON_SETTING_PAGE r_header_use_setting_page
+    {   
+    label=ASSIST_SETTING_LIST_ITEM_USE_HEADER;
+    type=EAknCtPopupSettingList;
+    }
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_header_use_setting_page_texts
+    {
+    flags=0;
+    setting_texts_resource=r_header_use_states_list;
+    }
+
+
+RESOURCE ARRAY r_header_use_states_list
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT {value=1; text=ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_YES;},
+        AVKON_ENUMERATED_TEXT {value=0; text=ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_NO;}
+        };
+    }
+
+
+RESOURCE POPUP_SETTING_LIST r_header_use_list
+    {
+    new_item_setting_editor_resource=r_header_use_states_list;
+    }
+
+
+RESOURCE AVKON_SETTING_PAGE r_automatic_deactivation_setting_page
+    {   
+    label=ASSIST_SETTING_LIST_ITEM_DEACTIVATION;
+    type=EAknCtPopupSettingList;
+    }
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_automatic_deactivation_setting_page_texts
+    {
+    flags=0;
+    setting_texts_resource=r_automatic_deactivation_states_list;
+    }
+
+
+RESOURCE ARRAY r_automatic_deactivation_states_list
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT {value=1; text=ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_ON;},
+        AVKON_ENUMERATED_TEXT {value=0; text=ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_OFF;}
+        };
+    }
+
+
+RESOURCE POPUP_SETTING_LIST r_automatic_deactivation_list
+    {
+    new_item_setting_editor_resource=r_automatic_deactivation_states_list;
+    }
+
+
+RESOURCE DIALOG r_deactivationtime_query
+	{
+	flags=EGeneralQueryFlags;
+	buttons=R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+		{
+		DLG_LINE
+			{
+			type=EAknCtQuery;
+			id=EGeneralQuery;
+			control=AVKON_DATA_QUERY
+				{
+				layout=ETimeLayout;
+				label=ASSIST_QUERY_PROMPT_DEACTIVATION_TIME;
+				control=TIME_EDITOR
+					{
+					minTime=TIME {second=0;minute=0;hour=0;};
+					maxTime=TIME {second=59;minute=59;hour=23;};
+					flags=EEikTimeWithoutSecondsField;
+					};
+				};
+			}
+		};
+	}
+
+
+RESOURCE LABEL r_assist_about_application_text
+	{
+	txt=ASSIST_ABOUT_APPLICATION_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_startup_note_text
+	{
+	buf=ASSIST_STARTUP_NOTE_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_no_message_note_text
+	{
+	buf=ASSIST_NO_MESSAGE_NOTE_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_long_message_note_text
+	{
+	buf=ASSIST_LONG_MESSAGE_NOTE_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_exit_note_text
+	{
+	buf=ASSIST_EXIT_NOTE_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_deactivation_warning_note_text
+	{
+	buf=ASSIST_DEACTIVATION_WARNING_NOTE_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_no_smsc_number_note_text
+	{
+	buf=ASSIST_NO_SMSC_NUMBER_NOTE_MESSAGE;
+	}
+
+
+RESOURCE TBUF r_assist_message_header
+    {
+    buf=ASSIST_HEADER_TEXT;
+    }

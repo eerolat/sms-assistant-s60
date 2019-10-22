@@ -1,0 +1,46 @@
+
+
+TARGET		assist.app
+TARGETTYPE  app
+UID			0x100039CE 0x101F3CB6 
+TARGETPATH	\system\apps\assist
+
+SOURCEPATH	..\src
+SOURCE		assistapp.cpp 
+SOURCE		assistdocument.cpp
+SOURCE		assistappui.cpp
+SOURCE		assistidleview.cpp
+SOURCE		assistaboutview.cpp
+SOURCE		assistsettingview.cpp
+SOURCE		assistsettinglistbox.cpp
+SOURCE		assistcontainer.cpp
+SOURCE		assistaboutcontainer.cpp
+SOURCE		assistdata.cpp
+SOURCE		assistlogmonitor.cpp
+SOURCE		assistdeactivationtimer.cpp
+
+RESOURCE	..\data\assist.rss
+RESOURCE	..\data\assist_caption.rss
+LANG		SC
+
+USERINCLUDE . ..\inc
+
+SYSTEMINCLUDE   . \epoc32\include
+
+LIBRARY         cone.lib
+LIBRARY         apparc.lib
+LIBRARY         eikcore.lib
+LIBRARY			eikcoctl.lib
+LIBRARY			avkon.lib
+LIBRARY         euser.lib
+LIBRARY			egul.lib
+LIBRARY         msgs.lib
+LIBRARY         smcm.lib
+LIBRARY         gsmu.lib
+LIBRARY			estor.lib
+LIBRARY			efsrv.lib
+LIBRARY			logcli.lib
+LIBRARY			ws32.lib
+
+AIF assist.aif ..\aif assistaif.rss c8 context_pane_icon.bmp context_pane_icon_mask.bmp list_icon.bmp list_icon_mask.bmp
+

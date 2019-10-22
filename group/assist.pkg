@@ -1,0 +1,54 @@
+;
+; Install file for SMS Assistant
+; Copyright (c) 2001-2005 Tuomas Eerola
+;
+
+
+; Languages - 
+&EN,FI,GE,AM,FR,IT
+
+
+; Installation header
+; Application UID
+#{"SMS Assistant","SMS Assistant","SMS Assistent","SMS Assistant","Assistant SMS","Assistente SMS"},(0x101F3CB6),2,99,6
+(0x101F6F88), 0, 0, 0, {"Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID","Series60ProductID"}
+
+; Show a message
+{
+"installationtext.en"
+"installationtext.fi"
+"installationtext.ge"
+"installationtext.am"
+"installationtext.fr"
+"installationtext.it"
+}-"", FILETEXT
+
+; Digitally sign this .sis file
+*"mykey.key","mycert.cer"
+
+; Files to install
+;
+"\Epoc32\release\armi\urel\assist.app"         -"!:\system\apps\assist\assist.app"
+
+{
+"\Epoc32\data\z\system\apps\assist\assist.ren"
+"\Epoc32\data\z\system\apps\assist\assist.rfi"
+"\Epoc32\data\z\system\apps\assist\assist.rge"
+"\Epoc32\data\z\system\apps\assist\assist.ram"
+"\Epoc32\data\z\system\apps\assist\assist.rfr"
+"\Epoc32\data\z\system\apps\assist\assist.rit"
+}-"!:\system\apps\assist\assist.rsc"
+
+"\Epoc32\data\z\system\apps\assist\assist_caption.rsc" -"!:\system\apps\assist\assist_caption.rsc"
+"\Epoc32\data\z\system\apps\assist\assist.aif"         -"!:\system\apps\assist\assist.aif"
+"\Epoc32\data\z\system\apps\assist\assist.mbm"         -"!:\system\apps\assist\assist.mbm"
+""-"!:\system\apps\assist\assist.ini",FILENULL
+""-"!:\system\apps\assist\assist.log",FILENULL
+
+
+; Required files
+; None
+
+
+; Component .sis files
+; None

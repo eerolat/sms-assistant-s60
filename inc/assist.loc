@@ -1,0 +1,44 @@
+//
+// ASSIST.LOC - localization file for SMS Assistant application
+// Copyright (c) 2001-2003 Tuomas Eerola
+//  
+
+// UK English
+
+
+#define ASSIST_CAPTION_STRING									"SMS Assistant"
+#define ASSIST_CAPTION_STRING_SHORT								"SMS A."
+
+#define ASSIST_NAVI_LABEL_ACTIVE								"Active"
+#define ASSIST_NAVI_LABEL_INACTIVE								"Inactive"
+#define ASSIST_IDLE_MENU_ITEM_ACTIVATE							"Activate"
+#define ASSIST_IDLE_MENU_ITEM_DEACTIVATE						"Deactivate"
+#define ASSIST_IDLE_MENU_ITEM_SETTINGS							"Settings"
+#define ASSIST_IDLE_MENU_ITEM_ABOUT								"About..."
+#define ASSIST_IDLE_MENU_ITEM_EXIT								"Exit"
+#define ASSIST_ABOUT_MENU_ITEM_BACK								"Back"
+#define ASSIST_SETTING_MENU_ITEM_CHANGE							"Change"
+#define ASSIST_SETTING_MENU_ITEM_BACK							"Done"
+#define ASSIST_SETTING_LIST_TITLE								"Settings"
+#define ASSIST_SETTING_LIST_ITEM_MESSAGE						"Reply message"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO						"Reply to"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER						"Message header"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION					"Automatic deactivation"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_ALL			"All"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_VOICE_CALLS	"Voice calls"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_SMS			"Text messages"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_MMS			"Multimedia"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_YES		"On"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_NO		"Off"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_ON		"On"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_OFF		"Off"
+#define ASSIST_QUERY_PROMPT_DEACTIVATION_TIME					"Deactivation at"
+#define ASSIST_ABOUT_APPLICATION_MESSAGE						"Tuomas Eerola\nwww.iki.fi/eerola\n2001-2005\n\nv2.99"
+#define ASSIST_HEADER_TEXT										"Automatic reply: "
+#define ASSIST_STARTUP_NOTE_MESSAGE								"Authorise SMS Assistant to send text messages without further confirmation?"
+#define ASSIST_STARTUP_INTERRUPTED_NOTE_MESSAGE					"SMS Assistant will be closed."
+#define ASSIST_NO_MESSAGE_NOTE_MESSAGE							"No message defined. Continue?"
+#define ASSIST_LONG_MESSAGE_NOTE_MESSAGE						"Message will be sent in 2 parts."
+#define ASSIST_EXIT_NOTE_MESSAGE								"This will shut down and deactivate SMS Assistant. Continue?"
+#define ASSIST_DEACTIVATION_WARNING_NOTE_MESSAGE				"This will deactivate SMS Assistant. Continue?"
+#define ASSIST_NO_SMSC_NUMBER_NOTE_MESSAGE						"SMS center number not defined."

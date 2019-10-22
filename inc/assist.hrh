@@ -1,0 +1,58 @@
+
+
+#ifndef __ASSIST_HRH__
+#define __ASSIST_HRH__
+
+#define KImageFileName "\\system\\apps\\assist\\assist.mbm"
+#define KAssistMaxMessageLength 160
+#define KMaxTelephoneNumberLength 30
+#define KIniFileVersion 299
+
+
+enum
+    {
+    EAll=0,
+    EVoice,
+    ESMS,
+    EMMS
+    };
+
+
+enum
+	{
+	EAssistCtrlIdAboutNote=0x100
+	};
+
+
+enum
+	{
+	EAssistCmdActivate=0x06000,
+	EAssistCmdDeactivate,
+	EAssistCmdAutomaticDeactivation,
+	EAssistCmdConfigure,
+	EAssistCmdAbout,
+	EAssistCmdActivateIdle,
+	EAssistCmdEdit,
+	EAssistCmdChange,
+	EAssistCmdExit
+	};
+
+
+enum
+	{
+	EReplyMessageSetting=0x100,
+	EReplyToSetting,
+	EAutomaticDeactivationSetting,
+	EReplyHeaderUseSetting	
+	};
+
+
+enum
+	{
+	KAssistIdleViewId=1,
+	KAssistSettingViewId,
+	KAssistAboutViewId
+	};
+
+
+#endif // __ASSIST_HRH__

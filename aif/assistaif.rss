@@ -1,0 +1,17 @@
+/*
+* ============================================================================
+*  Name     : assistaif.rss
+* ============================================================================
+*/
+
+#include <aiftool.rh>
+
+RESOURCE AIF_DATA
+    {
+    app_uid=0x101F3CB6;
+    num_icons=2;
+    embeddability=KAppNotEmbeddable;
+    newfile=KAppDoesNotSupportNewFile;
+    }
+
+// End of File

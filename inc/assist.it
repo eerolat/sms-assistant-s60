@@ -1,0 +1,44 @@
+//
+// ASSIST.LOC - localization file for SMS Assistant application
+// Copyright (c) 2001-2003 Tuomas Eerola
+//  
+
+// Italian
+
+
+#define ASSIST_CAPTION_STRING									"Assistente SMS"
+#define ASSIST_CAPTION_STRING_SHORT								"A. SMS"
+
+#define ASSIST_NAVI_LABEL_ACTIVE								"Attivo"
+#define ASSIST_NAVI_LABEL_INACTIVE								"Inattivo"
+#define ASSIST_IDLE_MENU_ITEM_ACTIVATE							"Attiva"
+#define ASSIST_IDLE_MENU_ITEM_DEACTIVATE						"Disattiva"
+#define ASSIST_IDLE_MENU_ITEM_SETTINGS							"Impostazioni"
+#define ASSIST_IDLE_MENU_ITEM_ABOUT								"Informazioni"
+#define ASSIST_IDLE_MENU_ITEM_EXIT								"Esci"
+#define ASSIST_ABOUT_MENU_ITEM_BACK								"Indietro"
+#define ASSIST_SETTING_MENU_ITEM_CHANGE							"Cambia"
+#define ASSIST_SETTING_MENU_ITEM_BACK							"Fatto"
+#define ASSIST_SETTING_LIST_TITLE								"Impostazioni"
+#define ASSIST_SETTING_LIST_ITEM_MESSAGE						"Messaggio risposta"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO						"Rispondi a"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER						"Testata messaggio"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION					"Disattiva autom."
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_ALL			"Tutti"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_VOICE_CALLS	"Chiamate vocali"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_SMS			"Messaggi testo"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_MMS			"MMS"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_YES		"On"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_NO		"Off"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_ON		"On"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_OFF		"Off"
+#define ASSIST_QUERY_PROMPT_DEACTIVATION_TIME					"Disattiva alle"
+#define ASSIST_ABOUT_APPLICATION_MESSAGE						"Tuomas Eerola\nwww.iki.fi/eerola\n2001-2005\n\nv2.99"
+#define ASSIST_HEADER_TEXT										"Risposta automatica: "
+#define ASSIST_STARTUP_NOTE_MESSAGE								"Autorizzi Assistente SMS a inviare messaggi di testo senza altre conferme?"
+#define ASSIST_STARTUP_INTERRUPTED_NOTE_MESSAGE					"Assistente SMS verrà chiuso."
+#define ASSIST_NO_MESSAGE_NOTE_MESSAGE							"Nessun messaggio definito. Procedo?"
+#define ASSIST_LONG_MESSAGE_NOTE_MESSAGE						"Messaggio inviato in 2 parti."
+#define ASSIST_EXIT_NOTE_MESSAGE								"Assistente SMS verrà chiuso e disattivato. Procedo?"
+#define ASSIST_DEACTIVATION_WARNING_NOTE_MESSAGE				"Assistente SMS verrà disattivato. Procedo?"
+#define ASSIST_NO_SMSC_NUMBER_NOTE_MESSAGE						"Numero centro SMS non definito."

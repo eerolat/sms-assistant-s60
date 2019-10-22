@@ -1,0 +1,44 @@
+//
+// ASSIST.LOC - localization file for SMS Assistant application
+// Copyright (c) 2001-2003 Tuomas Eerola
+//  
+
+// Finnish
+
+
+#define ASSIST_CAPTION_STRING									"SMS Assistant"
+#define ASSIST_CAPTION_STRING_SHORT								"SMS A."
+
+#define ASSIST_NAVI_LABEL_ACTIVE								"Aktiivinen"
+#define ASSIST_NAVI_LABEL_INACTIVE								"Ei aktiivinen"
+#define ASSIST_IDLE_MENU_ITEM_ACTIVATE							"Käynnistä"
+#define ASSIST_IDLE_MENU_ITEM_DEACTIVATE						"Pois päältä"
+#define ASSIST_IDLE_MENU_ITEM_SETTINGS							"Asetukset"
+#define ASSIST_IDLE_MENU_ITEM_ABOUT								"Tietoja..."
+#define ASSIST_IDLE_MENU_ITEM_EXIT								"Sulje"
+#define ASSIST_ABOUT_MENU_ITEM_BACK								"Takaisin"
+#define ASSIST_SETTING_MENU_ITEM_CHANGE							"Muuta"
+#define ASSIST_SETTING_MENU_ITEM_BACK							"Takaisin"
+#define ASSIST_SETTING_LIST_TITLE								"Asetukset"
+#define ASSIST_SETTING_LIST_ITEM_MESSAGE						"Vastausviesti"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO						"Vastaa"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER						"Viestin otsikko"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION					"Autom. poiskytkentä"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_ALL			"Kaikkiin"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_VOICE_CALLS	"Puheluihin"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_SMS			"Tekstiviesteihin"
+#define ASSIST_SETTING_LIST_ITEM_REPLY_TO_SELECTION_MMS			"MMS-viesteihin"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_YES		"Käytössä"
+#define ASSIST_SETTING_LIST_ITEM_USE_HEADER_SELECTION_NO		"Pois käytöstä"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_ON		"Käytössä"
+#define ASSIST_SETTING_LIST_ITEM_DEACTIVATION_SELECTION_OFF		"Pois käytöstä"
+#define ASSIST_QUERY_PROMPT_DEACTIVATION_TIME					"Sammuta"
+#define ASSIST_ABOUT_APPLICATION_MESSAGE						"Tuomas Eerola\nwww.iki.fi/eerola\n2001-2005\n\nv2.99"
+#define ASSIST_HEADER_TEXT										"Automaattinen vastaus: "
+#define ASSIST_STARTUP_NOTE_MESSAGE								"Valtuuta SMS Assistant lähtettämään tekstiviestejä ilman lisävahvistusta."
+#define ASSIST_STARTUP_INTERRUPTED_NOTE_MESSAGE					"SMS Assistant suljetaan."
+#define ASSIST_NO_MESSAGE_NOTE_MESSAGE							"Vastausviesti asettamatta. Haluatko jatkaa?"
+#define ASSIST_LONG_MESSAGE_NOTE_MESSAGE						"Viesti lähetetään kahdessa osassa."
+#define ASSIST_EXIT_NOTE_MESSAGE								"Toiminto sulkee ja sammuttaa sovelluksen. Haluatko jatkaa?"
+#define ASSIST_DEACTIVATION_WARNING_NOTE_MESSAGE				"Toiminto sammuttaa sovelluksen. Haluatko jatkaa?"
+#define ASSIST_NO_SMSC_NUMBER_NOTE_MESSAGE						"Tekstiviestikeskuksen numero asettamatta."
